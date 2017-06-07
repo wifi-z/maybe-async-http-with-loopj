@@ -1,4 +1,4 @@
-# maybe-async-http-with-loopj
+# maybe-async-http
 android async http client
 
 ## 파싱된 데이터를 저장하는 클래스
@@ -19,7 +19,7 @@ public class TestData {
 }
 </pre>
 
-## api 주소 구성
+## api 주소 구성 enum 구현
 <pre>
 public enum Api implements Protocol {
     TEST("url");
@@ -37,7 +37,7 @@ public enum Api implements Protocol {
 }
 </pre>
 
-## 리스폰스 클래스
+## 응답 클래스 
 <pre>
 public abstract class JsonResponse implements JsonAsyncHttpResponse {
     @Override
